@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Previous head content remains the same until the snow styles -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Memories 2024</title>
+    <style>
+        /* Your existing base styles remain the same */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5f5;
+            color: #2d3748;
+            position: relative;
+        }
+
+        .snow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .snow:before {
+            content: "";
+            position: absolute;
+            top: -650px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+                radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+                radial-gradient(3px 3px at 300px 250px, #fff, transparent),
+                radial-gradient(4px 4px at 400px 350px, #fff, transparent),
+                radial-gradient(6px 6px at 500px 100px, #fff, transparent),
+                radial-gradient(3px 3px at 50px 200px, #fff, transparent),
+                radial-gradient(4px 4px at 150px 300px, #fff, transparent),
+                radial-gradient(6px 6px at 250px 400px, #fff, transparent),
+                radial-gradient(3px 3px at 350px 500px, #fff, transparent),
+                radial-gradient(4px 4px at 550px 150px, #fff, transparent),
+                radial-gradient(6px 6px at 600px 250px, #fff, transparent),
+                radial-gradient(3px 3px at 450px 450px, #fff, transparent),
+                radial-gradient(4px 4px at 50px 450px, #fff, transparent),
+                radial-gradient(6px 6px at 150px 500px, #fff, transparent),
+                radial-gradient(3px 3px at 250px 50px, #fff, transparent),
+                radial-gradient(4px 4px at 350px 150px, #fff, transparent),
+                radial-gradient(6px 6px at 450px 250px, #fff, transparent),
+                radial-gradient(3px 3px at 550px 350px, #fff, transparent),
+                radial-gradient(4px 4px at 150px 100px, #fff, transparent),
+                radial-gradient(5px 5px at 280px 180px, #fff, transparent),
+                radial-gradient(3px 3px at 420px 280px, #fff, transparent),
+                radial-gradient(4px 4px at 520px 380px, #fff, transparent),
+                radial-gradient(5px 5px at 620px 220px, #fff, transparent),
+                radial-gradient(3px 3px at 120px 280px, #fff, transparent),
+                radial-gradient(4px 4px at 220px 380px, #fff, transparent),
+                radial-gradient(5px 5px at 320px 480px, #fff, transparent),
+                radial-gradient(3px 3px at 420px 580px, #fff, transparent);
+            background-size: 650px 650px;
+            animation: snowfall 10s linear infinite;
+            opacity: 0.6;  /* Slightly increased opacity */
+        }
+
+        @keyframes snowfall {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(650px);
+            }
+        }
+
+        /* Rest of your existing styles */
+        header {
+            background-color: #e53e3e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .memories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .memory-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+        }
+
+        .memory-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .memory-card img {
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            object-fit: contain;
+            border-radius: 5px;
+            margin: auto;
+            display: block;
+        }
+
+        .memory-card h3 {
+            color: #e53e3e;
+            margin: 1rem 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .memory-card p {
+            color: #4a5568;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #e53e3e;
+            color: white;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .message {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #2d3748;
+        }
+    </style>
+</head>
+<body>
+
+    <audio controls autoplay loop style="position: fixed; bottom: 10px; left: 10px; z-index: 1001; opacity: 0.7;">
+        <source src="utils/christmas-party-time-249613.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Snow element -->
+    <div class="snow"></div>
+
+    <header>
+        <h1>Încă un Crăciun alături de mine ❤️</h1>
+        <p>A mai trecut încă un an minunat împreună</p>
+    </header>
+
+    <div class="container">
+        <div class="message">
+            <p>Dragă roșcățel,</p>
+            <p>Ai aici un mic album cu aminitirile frumoase pe care le-am creat împreună anul acesta.</p>
+        </div>
+
+        <div class="memories-grid">
+            <div class="memory-card">
+                <img src="utils\beachplease.jpeg" alt="Memory 1">
+                <h3>Beach, please!</h3>
+            </div>
+
+            <div class="memory-card">
+                <img src="utils\londra.jpeg" alt="Memory 3">
+                <h3>Londra</h3>
+            </div>
+            
+            <div class="memory-card">
+                <img src="utils\gibraltar.jpeg" alt="Memory 2">
+                <h3>Gibraltar</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Crăciun fericit 2024! ❤️</p>
+        <p>Cu dragoste, Andreea</p>
+    </footer>
+</body>
+</html>
